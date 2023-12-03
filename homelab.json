@@ -7,41 +7,73 @@
     }
   },
   "roles": {
+    "dashy": {
+      "icon": "https://dashy.to/img/dashy.png",
+      "description": "The Ultimate Homepage for your Homelab [service port 8081]"
+    },
+    "diyhue": {
+      "icon": "https://dashy.to/img/dashy.png",
+      "description": "diyHue"
+    },
+    "harmony": {
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/32px-Home_Assistant_Logo.svg.png",
+      "description": "Logitech Harmony"
+    },
     "home-assistant": {
       "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/32px-Home_Assistant_Logo.svg.png",
       "description": "Open source home automation [service port 8123]"
     },
     "ipmi": {
-      "descriprion": "IPMI"
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/32px-Home_Assistant_Logo.svg.png",
+      "description": "IPMI"
     },
     "mosquitto": {
       "icon": "https://developer.community.boschrexroth.com/t5/image/serverpage/image-id/13467i19FDFA6E5DC7C260?v=v2",
       "description": "A mqtt broker [service port 1883]"
     },
     "nextcloud": {
-      "descriprion": "NextCloud"
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/32px-Home_Assistant_Logo.svg.png",
+      "description": "NextCloud"
     },
     "pi-hole": {
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/32px-Home_Assistant_Logo.svg.png",
       "description": "Pi-hole"
     },
+    "syncthing": {
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/32px-Home_Assistant_Logo.svg.png",
+      "description": "Syncthing"
+    },
     "ssh": {
-      "descriprion": "ssh"
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/32px-Home_Assistant_Logo.svg.png",
+      "description": "ssh"
     },
     "truenas": {
-      "descriprion": "truenas"
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/32px-Home_Assistant_Logo.svg.png",
+      "description": "truenas"
     },
     "xcp-ng": {
-      "descriprion": "XCP-ng"
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/32px-Home_Assistant_Logo.svg.png",
+      "description": "XCP-ng"
     },
     "xoa": {
-      "descriprion": "Xen Orchestra Appliance"
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/32px-Home_Assistant_Logo.svg.png",
+      "description": "Xen Orchestra Appliance"
     },
     "xofs": {
-      "descriprion": "Xen Orchestra From Sources"
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/32px-Home_Assistant_Logo.svg.png",
+      "description": "Xen Orchestra From Sources"
+    },
+    "xolite": {
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/32px-Home_Assistant_Logo.svg.png",
+      "description": "XCP-ng web-gui"
     },
     "zigbee2mqtt": {
       "icon": "https://www.zigbee2mqtt.io/logo.png",
       "description": "A zigbee2mqtt [service port 8080]"
+    },
+    "zwave-js-ui": {
+      "icon": "https://www.zigbee2mqtt.io/logo.png",
+      "description": "ZWave server"
     }
   },
   "hosts": {
@@ -58,23 +90,23 @@
       "ipv4": "10.0.0.2",
       "zone": "varasto",
       "parent": "arris",
-      "description": "Varaston kytkin",
-      "os": "HP 1810-8G"
+      "description": "Varaston HP 1810-8G kytkin",
+      "os": "Switch"
     },
     "kytkin-olohuone": {
       "icon": "http://10.0.0.3/images/login_logo.gif",
       "ipv4": "10.0.0.3",
       "zone": "olohuone",
       "parent": "kytkin-varasto",
-      "description": "Olohuoneen kytkin",
-      "os": "HP 1810-8G"
+      "description": "Olohuoneen HP 1810-8G kytkin",
+      "os": "Switch"
     },
-    "rpi40": {
-      "icon": "http://10.0.1.1/admin/img/logo.svg",
+    "pihole": {
+      "icon": "https://upload.wikimedia.org/wikipedia/fr/thumb/3/3b/Raspberry_Pi_logo.svg/32px-Raspberry_Pi_logo.svg.png",
       "ipv4": "10.0.1.1",
       "zone": "office",
       "parent": "arris",
-      "description": "Raspberry Pi 4",
+      "description": "Raspberry Pi 4 Pi-hole",
       "os": "Raspbian",
       "dnsalias": [
         "dns"
@@ -86,9 +118,9 @@
     "microserver-fw": {
       "icon": "https://cdn.icon-icons.com/icons2/2699/PNG/512/archlinux_logo_icon_167835.png",
       "ipv4": "10.0.2.1",
-      "zone": "microserver",
+      "zone": "nas",
       "parent": "kytkin-varasto",
-      "description": "HP Microserver Gen8 firmware",
+      "description": "HP Microserver Gen8 iLO4",
       "os": "iLO4",
       "dnsalias": [
         "ipmi.truenas"
@@ -100,10 +132,10 @@
     "microserver": {
       "icon": "https://cdn.icon-icons.com/icons2/2699/PNG/512/archlinux_logo_icon_167835.png",
       "ipv4": "10.0.2.2",
-      "zone": "microserver",
+      "zone": "nas",
       "parent": "kytkin-varasto",
-      "description": "HP Microserver Gen8",
-      "os": "FreeBSD",
+      "description": "HP Microserver Gen8 TrueNAS",
+      "os": "TrueNAS",
       "dnsalias": [
         "truenas"
       ],
@@ -114,10 +146,10 @@
     "jail1": {
       "icon": "https://cdn.icon-icons.com/icons2/2699/PNG/512/archlinux_logo_icon_167835.png",
       "ipv4": "10.0.2.3",
-      "zone": "microserver",
+      "zone": "nas",
       "parent": "microserver",
-      "description": "TrueNAS jail 1",
-      "os": "FreeBSD jail",
+      "description": "TrueNAS NextCloud jail",
+      "os": "TrueNAS_jail",
       "dnsalias": [
         "pilvi"
       ],
@@ -128,10 +160,10 @@
     "jail2": {
       "icon": "https://cdn.icon-icons.com/icons2/2699/PNG/512/archlinux_logo_icon_167835.png",
       "ipv4": "10.0.2.4",
-      "zone": "microserver",
+      "zone": "nas",
       "parent": "microserver",
-      "description": "TrueNAS jail 2",
-      "os": "FreeBSD jail",
+      "description": "TrueNAS Syncthing jail",
+      "os": "TrueNAS_jail",
       "dnsalias": [
         "syncthing"
       ],
@@ -144,7 +176,7 @@
       "ipv4": "10.0.3.1",
       "zone": "monster",
       "parent": "kytkin-varasto",
-      "description": "IPMI",
+      "description": "32-core monster IPMI",
       "os": "IPMI",
       "dnsalias": [
         "ipmi.monster"
@@ -158,7 +190,7 @@
       "ipv4": "10.0.3.2",
       "zone": "monster",
       "parent": "kytkin-varasto",
-      "description": "XCP-ng 32-core monster",
+      "description": "32-core monster XCP-ng host",
       "os": "XCP-ng",
       "dnsalias": [
         "xcp.monster"
@@ -167,13 +199,14 @@
 	"ssh",
         "xcp-ng",
 	"xolite"
+      ]
     },
     "xcp-ng-vm1": {
       "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/32px-Home_Assistant_Logo.svg.png",
       "ipv4": "10.0.2.5",
       "zone": "monster",
       "parent": "xcp-ng-monster",
-      "description": "XCP-ng virtual machine 1",
+      "description": "Home Assistant OS VM",
       "os": "HAOS",
       "dnsalias": [
         "hass"
@@ -188,7 +221,7 @@
       "ipv4": "10.0.3.3",
       "zone": "monster",
       "parent": "xcp-ng-monster",
-      "description": "XCP-ng virtual machine 2",
+      "description": "XOA VM",
       "os": "Debian",
       "dnsalias": [
         "xoa.monster"
@@ -202,7 +235,7 @@
       "ipv4": "10.0.3.4",
       "zone": "monster",
       "parent": "xcp-ng-monster",
-      "description": "XCP-ng virtual machine 3",
+      "description": "Small services NixOS VM",
       "os": "NixOS",
       "dnsalias": [
         "dashy",
@@ -211,21 +244,21 @@
       "roles": [
         "dashy",
         "ssh"
-      
+      ]
     },
-    "rpi30": {
+    "rpi3": {
       "icon": "https://upload.wikimedia.org/wikipedia/fr/thumb/3/3b/Raspberry_Pi_logo.svg/32px-Raspberry_Pi_logo.svg.png",
       "ipv4": "10.0.4.1",
       "zone": "homeoffice",
       "parent": "kytkin-varasto",
+      "description": "RPI3: zigbee, zwave, hue, mqtt",
+      "os": "Raspbian",
       "dnsalias": [
         "hue",
 	"mqtt",
         "z2m",
         "zwave"
       ],
-      "description": "The RPI 4 server",
-      "os": "NixOS",
       "roles": [
         "diyhue",
         "mosquitto",
@@ -264,6 +297,7 @@
       "roles": [
         "harmony",
         "home-assistant"
+      ]
     }
   }
 }

@@ -32,28 +32,61 @@ RSYNC_EXCLUDES = [".git"]
 OSSCAN = {
     "NixOS": ["Role", "Scan", "Config", "Topologie", "Hardwares", "Nix"],
     "Nix": ["Scan", "Config", "Topologie", "Hardwares", "Nix"],
-    "MikroTik": [
+    "TrueNAS": [
         "Scan",
     ],
-    "Sagem": [
+    "TrueNAS_jail": [
+        "Scan",
+    ],
+    "Switch": [
+        "Scan",
+    ],
+    "XCP-ng": [
+        "Scan",
+    ],
+    "HAOS": [
+        "Scan",
+    ],
+    "VoidLinux": [
+        "Scan",
+    ],
+    "ArchLinux": [
+        "Scan",
+    ],
+    "Debian": [
+        "Scan",
+    ],
+    "iLO4": [
+        "Scan",
+    ],
+    "IPMI": [
+        "Scan",
+    ],
+    "nix-darwin": [
         "Scan",
     ],
     "Android": [
         "Scan",
     ],
-    "Iphone": [
+    "iPhone": [
         "Scan",
     ],
     "Chromecast": [
         "Scan",
     ],
-    "GoogleMini": [
-        "Scan",
-    ],
     "Bridge": [
         "Scan",
     ],
-    "ArchLinux": [
+    "Arris": [
+        "Scan",
+    ],
+    "Raspbian": [
+        "Scan",
+    ],
+    "Harmony": [
+        "Scan",
+    ],
+    "MikroTik": [
         "Scan",
     ],
 }
