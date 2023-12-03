@@ -130,7 +130,7 @@ def generateNetworkGraph():
         network_graph += f"{hn}[<center>{hosts[hn]['description']}</br>{hosts[hn]['ipv4']}</center>]"  # noqa: E501
 
         if "parent" in hosts[hn]:
-            network_graph += f"---{hosts[hn]['parent']}"
+            network_graph += f" --- {hosts[hn]['parent']}"
 
         network_graph += "\n"
     network_graph += "\n"

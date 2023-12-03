@@ -253,23 +253,23 @@ This list generated with `inv docs.all-pages` command
  linkStyle default interpolate basis
  internet((Internet))
 
- arris[<center>Kaapelimodeemi</br>10.0.0.1</center>]---internet
-kytkin-varasto[<center>Varaston HP 1810-8G kytkin</br>10.0.0.2</center>]---arris
-kytkin-olohuone[<center>Olohuoneen HP 1810-8G kytkin</br>10.0.0.3</center>]---kytkin-varasto
-pihole[<center>Raspberry Pi 4 Pi-hole</br>10.0.1.1</center>]---arris
-microserver-fw[<center>HP Microserver Gen8 iLO4</br>10.0.2.1</center>]---kytkin-varasto
-microserver[<center>HP Microserver Gen8 TrueNAS</br>10.0.2.2</center>]---kytkin-varasto
-jail1[<center>TrueNAS NextCloud jail</br>10.0.2.3</center>]---microserver
-jail2[<center>TrueNAS Syncthing jail</br>10.0.2.4</center>]---microserver
-monster-fw[<center>32-core monster IPMI</br>10.0.3.1</center>]---kytkin-varasto
-xcp-ng-monster[<center>32-core monster XCP-ng host</br>10.0.3.2</center>]---kytkin-varasto
-xcp-ng-vm1[<center>Home Assistant OS VM</br>10.0.2.5</center>]---xcp-ng-monster
-xcp-ng-vm2[<center>XOA VM</br>10.0.3.3</center>]---xcp-ng-monster
-xcp-ng-vm3[<center>Small services NixOS VM</br>10.0.3.4</center>]---xcp-ng-monster
-rpi3[<center>RPI3: zigbee, zwave, hue, mqtt</br>10.0.4.1</center>]---kytkin-varasto
-harmony[<center>Logitech Harmony Hub</br>10.0.10.1</center>]---aruba-ap15
-macbook-g-wifi[<center>Work macbook</br>10.0.100.4</center>]---aruba-ap15
-v-puhelin[<center>V puhelin</br>10.0.100.5</center>]---aruba-ap15
+ arris[<center>Kaapelimodeemi</br>10.0.0.1</center>] --- internet
+kytkin-varasto[<center>Varaston HP 1810-8G kytkin</br>10.0.0.2</center>] --- arris
+kytkin-olohuone[<center>Olohuoneen HP 1810-8G kytkin</br>10.0.0.3</center>] --- kytkin-varasto
+pihole[<center>Raspberry Pi 4 Pi-hole</br>10.0.1.1</center>] --- arris
+microserver-fw[<center>HP Microserver Gen8 iLO4</br>10.0.2.1</center>] --- kytkin-varasto
+microserver[<center>HP Microserver Gen8 TrueNAS</br>10.0.2.2</center>] --- kytkin-varasto
+jail1[<center>TrueNAS NextCloud jail</br>10.0.2.3</center>] --- microserver
+jail2[<center>TrueNAS Syncthing jail</br>10.0.2.4</center>] --- microserver
+monster-fw[<center>32-core monster IPMI</br>10.0.3.1</center>] --- kytkin-varasto
+xcp-ng-monster[<center>32-core monster XCP-ng host</br>10.0.3.2</center>] --- kytkin-varasto
+xcp-ng-vm1[<center>Home Assistant OS VM</br>10.0.2.5</center>] --- xcp-ng-monster
+xcp-ng-vm2[<center>XOA VM</br>10.0.3.3</center>] --- xcp-ng-monster
+xcp-ng-vm3[<center>Small services NixOS VM</br>10.0.3.4</center>] --- xcp-ng-monster
+rpi3[<center>RPI3: zigbee, zwave, hue, mqtt</br>10.0.4.1</center>] --- kytkin-varasto
+harmony[<center>Logitech Harmony Hub</br>10.0.10.1</center>] --- aruba-ap15
+macbook-g-wifi[<center>Work macbook</br>10.0.100.4</center>] --- aruba-ap15
+v-puhelin[<center>V puhelin</br>10.0.100.5</center>] --- aruba-ap15
 
 subgraph office
 arris
